@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function InputForm(){
     return(
-        <form className="todo__form">
-            <input className="todo__input" type="text" placeholder="Input ur todo here, then tap enter" />
+        <form action="/" className="todo__form">
+            <input className="todo__input" type="text" placeholder="input your todos here then hit enter" />
         </form>
     )
 }
 
-export default InputForm
+export default InputForm;

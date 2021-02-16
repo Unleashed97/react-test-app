@@ -1,12 +1,19 @@
-import React from 'react'
+import React from 'react';
 
-import TodoItem from './TodoItem'
+import TodoItem from './TodoItem';
 
 function TodoList(){
     return(
-        <ul className="todo__list">
-            <TodoItem title="aabbccddee" index="1"/>
-        </ul>
+        <div className="todo__list-wrapper">
+            <ul className="todo__list">
+                <TodoItem />
+                <TodoItem />
+                <TodoItem />
+            </ul>
+            <div className="text-center">
+                <button className="todo__clear-list-btn">Clear list</button>
+            </div>
+        </div>
     )
 }
 

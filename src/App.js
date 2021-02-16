@@ -1,18 +1,18 @@
 import React from 'react'
 
-import Header from './components/Header'
-import SideBar from './components/SideBar'
-import Todo from './components/Todo'
-import './fontAwesome'
+import InputForm from './components/InputForm';
+import TodoList from './components/TodoList';
 
 function App(){
   return(
     <div className="wrapper">
-      <SideBar/>
-      <main className="main">
-        <Header />
-        <Todo />
-      </main>
+      <div className="container">
+        <div className="todo">
+          <h1 className="todo__title">Here's your todos</h1>
+          <InputForm />
+          <TodoList />
+        </div>
+      </div>
     </div>
   )
 }

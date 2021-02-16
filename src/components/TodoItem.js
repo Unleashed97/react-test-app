@@ -1,26 +1,25 @@
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function TodoItem(props){
+function TodoItem(){
     return(
-        <li className="todo__item">
-            <span className="todo__check-block">
-                <span className="todo__item-count">{props.index}</span>
-                <input className="todo__checkbox" type="checkbox" />
-                <p className="todo__item-title">{props.title}</p>
-            </span>
+        <li className="todo-item">
+            <span className="todo-item__checkbox">
+                <input type="checkbox"/>
 
-            <span className="todo__item-management">
-                <span className="todo__edit">
-                    <FontAwesomeIcon icon="pen"/>
-                </span>
-                <span className="todo__remove">
+            </span>
+            <p className="todo-item__text">Here is ur todo</p>
+            <span className="todo-item__manage">
+                <button className="todo-item__manage-edit">
+                    <FontAwesomeIcon icon="pen" />
+                </button>
+                <button className="todo-item__manage-remove">
                     <FontAwesomeIcon icon="trash"/>
-                </span>
+                </button>
             </span>
         </li>
     )
 }
 
-export default TodoItem
+export default TodoItem;
