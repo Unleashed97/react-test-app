@@ -7,7 +7,6 @@ function TodoItem(){
         <li className="todo-item">
             <span className="todo-item__checkbox">
                 <input type="checkbox"/>
-
             </span>
             <p className="todo-item__text">Here is ur todo</p>
             <span className="todo-item__manage">

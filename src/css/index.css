@@ -116,7 +116,7 @@ body {
   margin-right: 20px;
 }
 .todo-item__manage-edit:hover{
-  color: blue;
+  color: #80CFA9;
 }
 
 .todo-item__manage-remove:hover{
