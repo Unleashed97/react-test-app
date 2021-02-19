@@ -1,0 +1,54 @@
+.todo-item{
+    display: flex;
+    align-items: center;
+    /* padding: 0px 10px; */
+    margin-bottom: 30px;
+  
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+    
+    &__checkbox{
+      display: flex;
+      justify-content: flex-start;
+      width: 5%;
+    }
+    
+    &__text{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 80%;
+      color: black;
+      white-space: nowrap;
+    }
+    
+    &__manage{
+      display: flex;
+      justify-content: flex-end;
+      width: 15%;
+    }
+    
+    &__manage-edit, &__manage-remove{
+      padding: 0;
+      border: 0;
+      background: none;
+      transition: color .2s linear;
+    }
+    
+    &__manage-edit{
+      margin-right: 20px;
+
+      &:hover{
+        color: #80CFA9;
+      }
+    }
+    
+    &__manage-remove:hover{
+      color: red;
+    }
+  }
+  

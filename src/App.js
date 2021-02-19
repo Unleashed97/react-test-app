@@ -2,6 +2,7 @@ import React from 'react'
 
 import InputForm from './components/InputForm';
 import TodoList from './components/TodoList';
+import './scss/main.scss';
 
 function App(){
   return(
